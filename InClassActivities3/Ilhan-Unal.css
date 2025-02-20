@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.table-container {
+    width: 800px;
+    height: 600px;
+    overflow: auto;
+}
+
+.right {
+    text-align: right;
+}
+
+figure {
+    border: 2px solid black; 
+    padding: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+    margin-bottom: 18px;
+}
+
+thead 
+{
+	background-color: yellow;
+}
+
+th, td 
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}
+
+tfoot tr, tfoot td {
+    background-color: yellow; 
+    font-weight: bold;
+    border-top: 2px solid black; 
+}
+
+tbody tr:nth-child(even) td 
+{
+	background-color: yellow;
+}
+
+.department-cell {
+    background-color: white;
+}
+
+.container {
+    border: 1px solid black; 
+    padding: 10px; 
+    width: max-content; 
+    margin: 20px auto; 
+}
+
+.highlight-row td:not(:first-child) {
+    background-color: yellow; 
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.highlight-anne td {
+    background-color: yellow;
+}
+
+.department-text {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+}
+
