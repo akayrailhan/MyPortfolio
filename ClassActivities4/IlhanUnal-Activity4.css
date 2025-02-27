@@ -1,0 +1,58 @@
+.advertisement
+{
+	width: 100px;
+    height: 150px;
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:black;
+	position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.content {
+    position: relative;
+    width: 70%;
+    min-height: 300px;
+    margin: auto;
+    background-color: #fff; 
+    padding: 20px; 
+	border: 2px;
+}
+
+.logo img {
+    order: 1; 
+	padding-left: 180px;
+}
+
+.image img {
+    float: left;
+    width: 250px;
+    margin-right: 20px; 
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: start; 
+}
+
+.title {
+    padding-left: 15px; 
+}
+
+.head {
+    text-align: center;
+    padding: 10px;
+}
+
+.main {
+	text-align: justify;
+	width: 100%;
+    border: 2px ;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    background-color: #fff;
+}
