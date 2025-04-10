@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameArea {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    border: 2px solid white;
+}
+
+#chaseButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: blue;
+    width: 80px;
+    height: 40px;
+}
+
+#messageBox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 2px solid blue;
+    z-index: 1;
+}
+
+#closeBtn {
+    display: block;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#gameArea.inactive {
+    pointer-events: none;
+}
