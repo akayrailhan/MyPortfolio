@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking Button Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="gameArea">
+        <button id="chaseButton">Click Me</button>
+    </div>
+
+    <div id="messageBox">
+        <p id="messageText"></p>
+        <button id="closeBtn">Close</button>
+    </div>
+
+    <script>
+        let level = 1;
+        let clicks = 0;
+        let timeoutDuration = 500;
+        let timerId = null;
+
+        const button = document.getElementById('chaseButton');
+        const gameArea = document.getElementById('gameArea');
+        const messageBox = document.getElementById('messageBox');
+        const messageText = document.getElementById('messageText');
+        const closeBtn = document.getElementById('closeBtn');
+
+        function moveButton() {
+            const maxX = gameArea.clientWidth - button.clientWidth;
+            const maxY = gameArea.clientHeight - button.clientHeight;
+            button.style.left = Math.random() * maxX + "px";
+            button.style.top = Math.random() * maxY + "px";
+        }
+
+        function showMessage() {
+            messageText.textContent = 'You are the winner! You can go to the next level ' + level;
+            messageBox.style.display = "block";
+            gameArea.classList.add('inactive');
+        }
+
+        function hideMessage() {
+            messageBox.style.display = "none";
+            gameArea.classList.remove('inactive');
+        }
+
+        function startTimer() {
+            clearTimeout(timerId);
+            timerId = setTimeout(() => {
+                moveButton();
+            }, timeoutDuration);
+        }
+
+        button.addEventListener('mouseover', () => {
+            if (clicks === 0) {
+                startTimer();
+            }
+        });
+
+        button.addEventListener('click', () => {
+            clearTimeout(timerId);
+            timerId = null;
+            clicks++;
+            if (clicks === 3) {
+                level++;
+                timeoutDuration = timeoutDuration - 100;
+                showMessage();
+                clicks = 0;
+            } else {
+                moveButton();
+            }
+        });
+
+        closeBtn.addEventListener('click', hideMessage);
+
+        moveButton(); 
+    </script>
+</body>
+
+</html>
