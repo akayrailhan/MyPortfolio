@@ -39,3 +39,8 @@ td {
 th {
     text-align: left;
 }
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
