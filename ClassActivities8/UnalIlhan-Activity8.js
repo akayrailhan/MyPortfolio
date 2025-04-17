@@ -36,9 +36,17 @@ function displayScores() {
     $("scores_table").innerHTML = tableHTML;
 }
 
+// ...existing code...
+
 function addScore() {
     var name = $("name").value;
     var score = parseInt($("score").value, 10);
+    
+    // Clear any existing error message
+    if($("error-message")) {
+        $("error-message").remove();
+    }
+    
     if(name && score >= 0 && score <= 100) {
         names.push(name);
         scores.push(score);
@@ -46,8 +54,29 @@ function addScore() {
         $("score").value = "";
         $("name").focus();
     } else {
-        alert("You must enter a name and a valid score (0-100).");
+        // Create and show error message
+        var errorDiv = document.createElement('div');
+        errorDiv.id = 'error-message';
+        errorDiv.className = 'error-message';
+        errorDiv.textContent = "You must enter a name and a valid score (0-100).";
+        $("results").insertAdjacentElement('beforebegin', errorDiv);
     }
 }
 
+// Add these event listeners to clear error message when user starts typing
+window.onload = function () {
+    $("display_results").onclick = displayResults;
+    $("display_scores").onclick = displayScores;
+    $("add").onclick = addScore;
+    $("name").focus();
+    
+    // Add input event listeners to clear error when typing
+    $("name").addEventListener('input', clearError);
+    $("score").addEventListener('input', clearError);
+};
 
+function clearError() {
+    if($("error-message")) {
+        $("error-message").remove();
+    }
+}
