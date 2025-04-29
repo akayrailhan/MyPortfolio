@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Support.css">
+    <title>Support</title>
+    <style>
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <img src="kadroLogo.jpeg" alt="Kadro Logo">
+        <header>KADRO VIP PRIVATE EDUCATION</header>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Service</a>
+        <a href="News.html">News</a>
+        <a href="Gallery.html">Gallery</a>
+        <a class="active" href="#support">Support</a>
+        <a href="Aboutus.html">About Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Support</h1>
+        
+        <div class="faq">
+            <h2>FAQs</h2>
+            <p>Find answers to common questions here.</p>
+            <details>
+                <summary>What is KADRO VIP PRIVATE EDUCATION?</summary>
+                <p>KADRO VIP PRIVATE EDUCATION is a private educational institution offering academic support for middle school and high school students, along with specialized YKS exam preparation.</p>
+            </details>
+            
+            <details>
+                <summary>Who are your teachers?</summary>
+                <p>Our educators are highly experienced professionals dedicated to helping students succeed through personalized teaching methods.</p>
+            </details>
+            
+            <details>
+                <summary>What subjects do you offer tutoring in?</summary>
+                <p>We offer tutoring in mathematics, science, language arts, history, foreign languages, and more, including test preparation.</p>
+            </details>
+            
+            <details>
+                <summary>Do you provide one-on-one tutoring?</summary>
+                <p>Yes, we offer both one-on-one tutoring and small group classes to meet different learning needs.</p>
+            </details>
+            
+            <details>
+                <summary>What is the YKS exam?</summary>
+                <p>The YKS exam is a standardized test required for university admissions in Turkey. It consists of the TYT, AYT, and YDT sections.</p>
+            </details>
+            
+            <details>
+                <summary>Who can enroll in your YKS preparation program?</summary>
+                <p>Students who have previously taken the YKS and want to improve their scores, as well as first-time test takers, can join our program.</p>
+            </details>
+            
+            <details>
+                <summary>How can I enroll in a program?</summary>
+                <p>You can enroll by visiting our office or calling us.</p>
+            </details>
+            
+            <details>
+                <summary>What are the tuition fees?</summary>
+                <p>Tuition fees vary depending on the program. Contact us for detailed pricing information.</p>
+            </details>
+            
+            <details>
+                <summary>How can I contact KADRO VIP PRIVATE EDUCATION?</summary>
+                <p>You can reach us via phone, email, or visit our office during business hours. We're happy to assist you!</p>
+            </details>
+        </div>
+        
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" title="Please enter your full name">
+                <input type="email" placeholder="Email" title="Enter a valid email address">
+                <input type="tel" name="phone" id="phone" placeholder="(000) 000-00 00" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{2} [0-9]{2}{()}" title="Please enter a valid phone number: (5XX) XXX-XX XX" required>
+                <textarea placeholder="Message" title="Enter your message here"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+  
+
+        <div class='appointment-section'>
+            <h2>Schedule an Appointment</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type='text' id='appointmentDate' placeholder='Select Date' required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div id="dialog" title="Appointment Confirmation" style="display: none;">
+            <p id="dialogContent"></p>
+        </div>
+        
+
+        <div class="map">
+            <h2>Find Us</h2>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.9266367521645!2d30.72945116965121!3d36.873442371098285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39b4940d566c5%3A0xe26af776f38194b2!2zS0FEUk8gVklQIMOWWkVMIMOWxJ5SRVTEsE0gS1VSU1U!5e0!3m2!1str!2str!4v1741176572848!5m2!1str!2str" >
+            </iframe>
+        </div>
+    </div>
+
+    <br><br><br>   
+    <footer>
+        <p>&copy; 2025 Kadro Vip Private Education. All rights reserved.</p>
+    </footer>
+    <script src="Support.js"></script>
+</body>
+</html>
