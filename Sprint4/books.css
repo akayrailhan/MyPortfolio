@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #bb2424;
+    margin-left: 32px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #bb2424;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #915656;
+  }
+  
+  #results {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 32px;
+  }
+  
+  .book {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+  }
+  
+  .book img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .book-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .book-authors {
+    font-style: italic;
+    color: #666;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 0;
+  }
+  
+  .header header {
+    text-align: left;
+    font-size: xx-large;
+    margin-top: 54px;
+    float: left;
+  }
+  
+  .header{
+    overflow: hidden;
+  }
+  
+  .header img {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+  
+  .header header {
+    text-align: left;
+    font-size: xx-large;
+    margin-top: 54px;
+    float: left;
+  }
+
+  
+  footer {
+    background-color: #bb2424;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.book_p {
+    width: 80%;
+    margin-left: 32px;
+    margin-bottom: 64px;
+    font-size: large;
+}
+
+h2 {
+  width: 80%;
+  border-bottom: 4px solid #bb2424;
+  margin-left: 30px;
+}
+  
